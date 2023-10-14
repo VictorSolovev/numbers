@@ -1,17 +1,33 @@
+@font-face {
+    font-family: 'Circe Bold';
+    src: url('Circe-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Circe Regular';
+    src: url('Circe-Regular.otf');
+}
+
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: #121212;
-    font-family: Arial, sans-serif;
+    font-family: 'Circe Regular', sans-serif;
     color: #FFFFFF;
 }
 
 .container {
     width: 50%;
-    margin: auto;
     text-align: center;
-    padding-top: 20%;
     background-color: #2C2C2C;
     border-radius: 10px;
     padding: 20px;
+}
+
+h1 {
+    font-family: 'Circe Bold', sans-serif;
 }
 
 input {
@@ -20,14 +36,16 @@ input {
     border-radius: 5px;
     margin: 5px;
     width: 100px;
+    font-family: 'Circe Regular', sans-serif;
 }
 
 button {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    background-color: #FFC107;
+    border-radius: 50px;
+    background: linear-gradient(to right, #ee8473, #f19b5a);
     cursor: pointer;
+    font-family: 'Circe Regular', sans-serif;
 }
 
 #result {
